@@ -12,7 +12,22 @@ public class PointApp {
 		 * System.out.println(p01.toString());
 		 */
 		
-		PointList pList = new PintList();
+		PointList pList = new PointList();
+		
+		pList.add(p01);
+		pList.add(p02);
+		
+		System.out.println(pList.get(0).getX());
+		System.out.println(pList.get(0).toString());
+		
+		System.out.println(pList.get(1).getY());
+		System.out.println(pList.get(1).toString());
+		
+		System.out.println(pList.size());
+		
+		Point p03 = new Point(155,90);
+		pList.add(p03);
+		System.out.println(pList.size());	
 		
 
 	}
